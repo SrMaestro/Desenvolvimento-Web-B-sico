@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 60px;
+}
+
+.flex_container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 16px; /* Espaço entre os itens */
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Apenas 1 coluna */
+    }
+}

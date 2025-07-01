@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <button id="toggleMenu">Mostrar/Esconder Menu</button>
+    <div class="menu-hamburguer" id="menu-hamburguer">
+        <h1>Menu de X</h1>
+        <ul>
+            <li>Hambúrguer Clássico</li>
+            <li>Cheeseburguer</li>
+            <li>Hambúrguer Bacon</li>
+            <li>Hambúrguer Vegetariano</li>
+        </ul>
+    </div>
+    <script>
+        const btn = document.getElementById('toggleMenu');
+        const menu = document.getElementById('menu-hamburguer');
+        btn.onclick = () => {
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        };
+        // Começa escondido, se quiser:
+        // menu.style.display = 'none';
+    </script>
+
+
+</body>
+
+</html>
