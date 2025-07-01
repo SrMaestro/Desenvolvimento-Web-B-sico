@@ -1,0 +1,77 @@
+/* Defina cores de fundo (background-color) e de texto (color) para <header>, <main> e <footer>. 
+   Para cada uma dessas seções, aplique margin, padding e border de forma a evidenciar
+   
+   
+   tores e Propriedades - No mesmo styles.css, adicione: - Um estilo para todas as tags <h2> que aumente a font-size e aplique textdecoration: underline. - Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique um leve background-color.
+   
+   */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(72, 80, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rem;
+}
+
+header {
+    color: rgb(225, 171, 34);
+    background-color: rgb(79, 49, 3);
+    width: 100%;
+    align-self: stretch;
+    padding: 2rem;
+    margin: 0;
+    border: 2px solid #fff;
+    text-align: center;
+
+
+}
+
+main {
+    text-align: center;
+    color: bisque;
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+}
+
+section {
+    margin: 2rem;
+}
+
+footer {
+    width: 100%;
+    /* Ocupa toda a largura da janela */
+    align-self: stretch;
+    /* Flexbox: ocupa toda a largura */
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.destaque {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0f8ff16;
+}
+
+#importante{
+    border-top: 70px;
+}
